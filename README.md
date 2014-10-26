@@ -1,7 +1,8 @@
 spring-example03
 ================
 
-Spring Config with web app. Shows that a controller stereotype annotation is not needed with scanning, instead compose
-a "meta" annotation to specify the class is used for request mappings that return a response body.
+Spring Config for a simple Web app.
+Shows that a controller stereotype annotation is not needed, instead compose a "meta" annotation to specify the class is being used for request mappings that also return a response body(Effectively @RestController).
 
-Only RequestMapping is needed, see org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#isHandler.
+Only RequestMapping is needed for use in MVC.
+See org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#isHandler.
